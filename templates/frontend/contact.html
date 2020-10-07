@@ -2,12 +2,13 @@
 {% block title %} Contact {% endblock %}
 {% block content %}
 <div class="jumbotron">
-    <h1 class="display-3">Contact page</h1>
-    <p class="lead">Jumbo helper text</p>
+    <h1 class="display-3">I told you not to contact me.</h1>
+    <p class="lead">Why won't you listen!</p>
     <hr class="my-2">
-    <p>More info</p>
+    <p>No more info</p>
     <p class="lead">
-        <a class="btn btn-primary btn-lg" href="Jumbo action link" role="button">Jumbo action name</a>
+        <a class="btn btn-primary btn-lg" href="{% url 'index' %}" role="button">Jumbo action name</a>
     </p>
+    <img src ="static/images/notstonk.jpg" align="center">
 </div>
 {% endblock %}

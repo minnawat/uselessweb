@@ -1,13 +1,16 @@
 {% extends 'frontend/base.html' %}
 {% block title %} About {% endblock %}
 {% block content %}
+<script>function close_window() {
+    close();
+}</script>
 <div class="jumbotron">
-    <h1 class="display-3">About page</h1>
-    <p class="lead">Jumbo helper text</p>
+    <h1 class="display-3">Why are you still Here?</h1>
+    <p class="lead">Is this page THAT interesting?</p>
     <hr class="my-2">
     <p>More info</p>
     <p class="lead">
-        <a class="btn btn-primary btn-lg" href="Jumbo action link" role="button">Jumbo action name</a>
+        <a class="btn btn-primary btn-lg" href="https://theuselessweb.com/" role="button" onclick="closeBtnClicked()">just get out!</a>
     </p>
 </div>
 {% endblock %}
