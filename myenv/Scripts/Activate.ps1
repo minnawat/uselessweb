@@ -6,7 +6,7 @@ Activate a Python virtual environment for the current PowerShell session.
 Pushes the python executable for a virtual environment to the front of the
 $Env:PATH environment variable and sets the prompt to signify that you are
 in a Python virtual environment. Makes use of the command line switches as
-well as the `pyvenv.cfg` file values present in the virtual environment.
+well as the 'pyvenv.cfg' file values present in the virtual environment.
 
 .Parameter VenvDir
 Path to the directory that contains the virtual environment to activate. The
@@ -113,15 +113,15 @@ Get-PyVenvConfig parses the values from the pyvenv.cfg file located in the
 given folder, and returns them in a map.
 
 For each line in the pyvenv.cfg file, if that line can be parsed into exactly
-two strings separated by `=` (with any amount of whitespace surrounding the =)
-then it is considered a `key = value` line. The left hand string is the key,
+two strings separated by '=' (with any amount of whitespace surrounding the =)
+then it is considered a 'key = value' line. The left hand string is the key,
 the right hand is the value.
 
-If the value starts with a `'` or a `"` then the first and last character is
+If the value starts with a ''' or a '"' then the first and last character is
 stripped from the value before being captured.
 
 .Parameter ConfigDir
-Path to the directory that contains the `pyvenv.cfg` file.
+Path to the directory that contains the 'pyvenv.cfg' file.
 #>
 function Get-PyVenvConfig(
     [String]
@@ -137,7 +137,7 @@ function Get-PyVenvConfig(
 
     if ($pyvenvConfigPath) {
 
-        Write-Verbose "File exists, parse `key = value` lines"
+        Write-Verbose "File exists, parse 'key = value' lines"
         $pyvenvConfigContent = Get-Content -Path $pyvenvConfigPath
 
         $pyvenvConfigContent | ForEach-Object {
@@ -181,8 +181,8 @@ else {
     Write-Verbose "VenvDir=$VenvDir"
 }
 
-# Next, read the `pyvenv.cfg` file to determine any required value such
-# as `prompt`.
+# Next, read the 'pyvenv.cfg' file to determine any required value such
+# as 'prompt'.
 $pyvenvCfg = Get-PyVenvConfig -ConfigDir $VenvDir
 
 # Next, set the prompt from the command line, or the config file, or

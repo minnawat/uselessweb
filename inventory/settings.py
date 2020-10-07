@@ -88,9 +88,9 @@ WSGI_APPLICATION = 'inventory.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'heroku_963145ced2e35e2',
-        'USER': 'b86c25fe305fa3',
-        'PASSWORD': '78f2157f4101482',
+        'NAME': 'heroku_2e41e60c0899793',
+        'USER': 'b414ff4a593737',
+        'PASSWORD': '256aca95',
         'HOST': 'us-cdbr-east-02.cleardb.com',
         'PORT': '3306',
 
