@@ -62,33 +62,6 @@
     <script src="jquery/jquery-3.4.1.min.js"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script>
 
-<div class="container">
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Names</th>
-                <th>Detail</th>
-                <th>Barcode</th>
-                <th>Qty</th>
-                <th>Price</th>
-                <th>Status</th>
-
-            </tr>
-        </thead>
-        <tbody>
-            {% for p in products %}
-            <tr>
-                <td>{{p.product_name}}</td>
-                <td>{{p.product_detail}}</td>
-                <td>{{p.product_barcode}}</td>
-                <td>{{p.product_qty}}</td>
-                <td>{{p.product_price}}</td>
-                <td>{{p.product_status}}</td>
-            </tr>
-            {% endfor %}
-        </tbody>
-    </table>
-</div>
     <footer class="footer mt-5">
         <div class="container bottom_border">
         <div class="row">

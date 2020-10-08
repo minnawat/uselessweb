@@ -86,15 +86,14 @@ WSGI_APPLICATION = 'inventory.wsgi.application'
 #     }
 # }
 DATABASES = {
-    'default': {
+   'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'heroku_a1a30d3b9be581d',
         'USER': 'b28e24c40bc119',
         'PASSWORD': '8b19ae09',
         'HOST': 'us-cdbr-east-02.cleardb.com',
-        'PORT': '3306',
-
-    }
+        'PORT': '3306'
+   }
 }
 
 # Password validation
